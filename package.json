@@ -1,0 +1,13 @@
+{ "name" : "url-expander",
+  "description" : "An url expander",
+  "version" : "0.0.1",
+  "author" : "Daniel Hofstetter <daniel.hofstetter@42dh.com>",
+  "main" : "./lib/url_expander",
+  "engines" : { "node" : ">= 0.4.0" },
+  "devDependencies" : { "nodeunit" : "*" },
+  "licenses" : [ { "type" : "MIT" } ],
+  "repository" :
+    { "type" : "git",
+      "url" : "https://github.com/cakebaker/node-url-expander.git"
+    }
+}
