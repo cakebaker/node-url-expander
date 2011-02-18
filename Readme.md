@@ -30,6 +30,16 @@ For expanding a single url you can also use:
     });
     expander.expand();
 
+## Tests
+
+Running the unit tests:
+
+    $ nodeunit test/*
+
+Running the integration tests (there will be no output if the tests pass):
+
+    $ node integration-test.js
+
 ## License
 
 node-url-expander is licensed under the MIT license.
