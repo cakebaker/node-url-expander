@@ -1,6 +1,6 @@
 { "name" : "url-expander",
   "description" : "An url expander",
-  "version" : "0.0.1",
+  "version" : "0.0.2",
   "author" : "Daniel Hofstetter <daniel.hofstetter@42dh.com>",
   "main" : "./lib/url_expander",
   "engines" : { "node" : ">= 0.4.0" },
