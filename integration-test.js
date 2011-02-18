@@ -3,10 +3,11 @@
 var assert = require('assert'),
     UrlExpander = require('./lib/url_expander');
 
-var urlsToExpand = ['http://github.com', 'http://4sq.com/ijRlR4', 'http://on.fb.me/gkDyBL'];
+var urlsToExpand = ['http://github.com', 'http://4sq.com/ijRlR4', 'http://on.fb.me/gkDyBL', 'http://google.c'];
 var expectedUrls = ['https://github.com/',
                     'http://foursquare.com/simonashley/checkin/4d4f9dddc5ff6ea80f619207?s=8WGpW3i5eHCKZgabNZiYEKy4Wbo',
-                    'http://www.facebook.com/reflections.at/posts/123810601024508'];
+                    'http://www.facebook.com/reflections.at/posts/123810601024508',
+                    'http://google.c'];
 
 var expander = new UrlExpander(urlsToExpand);
 
