@@ -34,7 +34,7 @@ For expanding a single url you can also use:
 
 Running the unit tests:
 
-    $ nodeunit test/*
+    $ nodeunit test/tests/*
 
 Running the integration tests (there will be no output if the tests pass):
 
