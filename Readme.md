@@ -36,7 +36,7 @@ Running the unit tests:
 
     $ nodeunit test/tests/*
 
-Running the integration tests (there will be no output if the tests pass):
+Running the integration tests:
 
     $ node integration-test.js
 
