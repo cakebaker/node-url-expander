@@ -17,11 +17,11 @@ var expectedUrls = ['https://github.com/',
 var expander = new UrlExpander(urlsToExpand);
 
 expander.on('expanded', function (originalUrls, expandedUrls) {
-    var i;
-
-    for (i = 0; i < urlsToExpand.length; i++) {
-        assert.strictEqual(expectedUrls[i], expandedUrls[originalUrls.indexOf(urlsToExpand[i])]);
-    }
+    urlsToExpand.forEach(function (urlToExpand, i) {
+        var expandedUrl = expandedUrls[originalUrls.indexOf(urlToExpand)];
+        console.log(urlToExpand + ' -> ' + expandedUrl);
+        assert.strictEqual(expectedUrls[i], expandedUrl);
+    });
 });
 
 expander.expand();
