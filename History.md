@@ -1,3 +1,8 @@
+0.0.5
+=====
+
+  * Bugfix: Encode entire path, not only the querystring
+
 0.0.4
 =====
 
