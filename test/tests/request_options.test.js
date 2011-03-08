@@ -27,5 +27,15 @@ exports['create'] = testCase({
         var options = requestOptions.create('http://example.com?test=value');
         test.equals('/?test=value', options.path);
         test.done();
+    },
+    'encodes the path of an URL': function (test) {
+        var options = requestOptions.create('http://example.com/path with spaces/');
+        test.equals('/path%20with%20spaces/', options.path);
+        test.done();
+    },
+    'encodes querystring': function (test) {
+        var options = requestOptions.create('http://example.com?test=value with spaces');
+        test.equals('/?test=value%20with%20spaces', options.path);
+        test.done();
     }
 });
