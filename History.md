@@ -1,3 +1,10 @@
+0.0.4
+=====
+
+  * Requiring node.js v0.4.2
+  * Bugfix: Fix encoding issue introduced in v0.0.3
+  * Bugfix: Support for urls containing a port
+
 0.0.3
 =====
 
