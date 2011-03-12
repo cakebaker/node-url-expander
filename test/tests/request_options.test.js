@@ -37,5 +37,10 @@ exports['create'] = testCase({
         var options = requestOptions.create('http://example.com?test=value with spaces');
         test.equals('/?test=value%20with%20spaces', options.path);
         test.done();
+    },
+    'decode and encode an already encoded URL': function (test) {
+        var options = requestOptions.create('http://example.com?redirectTo=http%3a%2f%2fexample.org%2fa%20space');
+        test.equals('/?redirectTo=http://example.org/a%20space', options.path);
+        test.done();
     }
 });
