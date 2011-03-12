@@ -1,3 +1,8 @@
+0.0.6
+=====
+
+  * Bugfix: Fix issue with encoding an already encoded URL
+
 0.0.5
 =====
 
