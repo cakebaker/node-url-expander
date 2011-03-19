@@ -18,5 +18,10 @@ exports['getRedirectUrl()'] = testCase({
         var path = '/some/path';
         test.equal(CURRENT_URL + path, responseHandler.getRedirectUrl(CURRENT_URL, factory.createRedirectionResponse(path)));
         test.done();
+    },
+    'returns the absolute redirection url for an HTTP 301 response with just a filename': function (test) {
+        var filename = 'error.html';
+        test.equal(CURRENT_URL + '/' + filename, responseHandler.getRedirectUrl(CURRENT_URL, factory.createRedirectionResponse(filename)));
+        test.done();
     }
 });
