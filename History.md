@@ -1,3 +1,8 @@
+0.0.7
+=====
+
+  * Bugfix: Fix issue with recognizing relative URLs in the location header
+
 0.0.6
 =====
 
