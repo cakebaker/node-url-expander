@@ -1,14 +1,13 @@
 var testCase = require('nodeunit').testCase,
     requestOptions = require('../../lib/request_options');
 
-const DEFAULT_PORT = 80;
-
 exports['create'] = testCase({
     'returns an options object for an URL': function (test) {
         var options = requestOptions.create('http://example.com');
         test.equals('example.com', options.host);
-        test.equals(DEFAULT_PORT, options.port);
+        test.equals(requestOptions.DEFAULT_PORT, options.port);
         test.equals('/', options.path);
+        test.equals(requestOptions.USER_AGENT, options.headers['User-Agent']);
         test.done();
     },
     'returns an options object for an URL with a path': function (test) {
@@ -38,7 +37,7 @@ exports['create'] = testCase({
         test.equals('/?test=value%20with%20spaces', options.path);
         test.done();
     },
-    'decode and encode an already encoded URL': function (test) {
+    'decodes and encodes an already encoded URL': function (test) {
         var options = requestOptions.create('http://example.com?redirectTo=http%3a%2f%2fexample.org%2fa%20space');
         test.equals('/?redirectTo=http://example.org/a%20space', options.path);
         test.done();
