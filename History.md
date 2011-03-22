@@ -1,3 +1,9 @@
+0.0.8
+=====
+
+  * Requiring node.js v0.4.3 as it fixes issue #784, which caused problems when expanding some URLs
+  * Bugfix: Added OS to user agent string to prevent to get redirected to the mobile version when expanding cnbc.com URLs
+
 0.0.7
 =====
 
