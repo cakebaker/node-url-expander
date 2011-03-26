@@ -15,7 +15,12 @@ node-url-expander is an url expander for [node.js](http://nodejs.org).
     var UrlExpander = require('url-expander');
 
     var expander = new UrlExpander(['http://example.com', 'http://example.net']);
+    // the "expanded" event is emitted once after all urls have been expanded
     expander.on('expanded', function (originalUrls, expandedUrls) {
+        // do something
+    });
+    // the "singleUrlExpanded" event is emitted for each expanded url
+    expander.on('singleUrlExpanded', function (originalUrl, expandedUrl) {
         // do something
     });
     expander.expand();
