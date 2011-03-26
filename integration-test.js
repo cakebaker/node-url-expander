@@ -22,12 +22,9 @@ var expectedUrls = ['https://github.com/',
 
 var expander = new UrlExpander(urlsToExpand);
 
-expander.on('expanded', function (originalUrls, expandedUrls) {
-    urlsToExpand.forEach(function (urlToExpand, i) {
-        var expandedUrl = expandedUrls[originalUrls.indexOf(urlToExpand)];
-        console.log(urlToExpand + ' -> ' + expandedUrl);
-        assert.strictEqual(expectedUrls[i], expandedUrl);
-    });
+expander.on('singleUrlExpanded', function (originalUrl, expandedUrl) {
+    console.log(originalUrl + ' -> ' + expandedUrl);
+    assert.equal(expectedUrls[urlsToExpand.indexOf(originalUrl)], expandedUrl);
 });
 
 expander.expand();
