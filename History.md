@@ -1,3 +1,8 @@
+0.0.9
+=====
+
+  * Feature: UrlExpander emits a "singleUrlExpanded" event for each expanded URL
+
 0.0.8
 =====
 
