@@ -9,16 +9,14 @@ var urlsToExpand = ['http://github.com',
                     'http://google.c',
                     'http://j.mp/fdJAdV',
                     'http://bit.ly/icS2gt',
-                    'http://www.trai.gov.in/Feedback.asp',
-                    'http://cnbc.com/id/41863659'];
+                    'http://www.trai.gov.in/Feedback.asp'];
 var expectedUrls = ['https://github.com/',
-                    'http://foursquare.com/simonashley/checkin/4d4f9dddc5ff6ea80f619207?s=8WGpW3i5eHCKZgabNZiYEKy4Wbo',
+                    'https://foursquare.com/simonashley/checkin/4d4f9dddc5ff6ea80f619207?s=8WGpW3i5eHCKZgabNZiYEKy4Wbo',
                     'http://www.facebook.com/reflections.at/posts/123810601024508',
                     'http://google.c',
                     'http://gigaom.com/2011/02/14/silicon-valley-the-land-of-confusion/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:%20OmMalik%20(GigaOM:%20Tech)',
                     'http://www.last.fm/music/Toro%20y%20Moi/_/Elise',
-                    'http://www.trai.gov.in/error.asp',
-                    'http://www.cnbc.com/id/41863659/'];
+                    'http://www.trai.gov.in/error.asp'];
 
 var expander = new UrlExpander(urlsToExpand);
 
