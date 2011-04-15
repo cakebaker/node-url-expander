@@ -1,3 +1,8 @@
+0.0.10
+======
+
+  * Fixing broken integration tests: removed URL which no longer exists, switched another URL to https
+
 0.0.9
 =====
 
